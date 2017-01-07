@@ -12,8 +12,8 @@
     "dict/README.md"
   ],
   "bin": {
-    "bin/download-negaposi-dict.js": "download-negaposi-dict",
-    "bin/negaposi-analyzer.js": "negaposi-analyzer"
+    "download-negaposi-dict": "bin/download-negaposi-dict.js",
+    "negaposi-analyzer": "bin/negaposi-analyzer.js"
   },
   "name": "negaposi-analyzer-ja",
   "version": "1.0.0",
