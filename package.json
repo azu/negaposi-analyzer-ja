@@ -16,7 +16,7 @@
     "negaposi-analyzer": "bin/negaposi-analyzer.js"
   },
   "name": "negaposi-analyzer-ja",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "形態素解析したtokenからネガティブ/ポジティブを判定したスコアを返すJavaScriptライブラリ",
   "main": "lib/negaposi-analyzer-ja.js",
   "scripts": {
