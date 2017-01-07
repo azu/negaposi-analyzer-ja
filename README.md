@@ -1,4 +1,4 @@
-# negaposi-analyzer-ja
+# negaposi-analyzer-ja [![Build Status](https://travis-ci.org/azu/negaposi-analyzer-ja.svg?branch=master)](https://travis-ci.org/azu/negaposi-analyzer-ja)
 
 形態素解析したテキストからネガティブ/ポジティブ(単語感情極性)を判定したスコアを返すJavaScriptライブラリ
 
