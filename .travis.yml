@@ -4,3 +4,4 @@ node_js: "stable"
 install:
 - npm install --ignore-script
 - npm run --if-present build
+- node bin/download-negaposi-dict.js
