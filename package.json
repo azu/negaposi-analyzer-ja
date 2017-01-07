@@ -7,7 +7,9 @@
   "files": [
     "bin/",
     "lib/",
-    "src/"
+    "src/",
+    "dict/example-dict.json",
+    "dict/README.md"
   ],
   "bin": {
     "bin/download-negaposi-dict.js": "download-negaposi-dict"
