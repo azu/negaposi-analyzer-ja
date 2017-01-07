@@ -18,6 +18,13 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
+### CLI
+
+    echo "これは良い文章だと思います。" | negaposi-analyzer
+    # 0.08096107836464397
+
+### Node.js
+
 このライブラリ自体は形態素解析をしていません。
 形態素解析した結果のtoken配列を引数として受け取ります。
 
@@ -32,8 +39,6 @@ kuromojin("これは良い文章だと思います。").then(tokens => {
     assert(score === 0.0899567537384933);
 });
 ```
-
-## API
 
 ### `analyze(tokens: Object[], options?: Object): number`
 
@@ -68,6 +73,12 @@ const posiNegaRatio = {
     zero: 20
 };
 ```
+
+## Related
+
+- [ネガポジ判定を行うGem作ってみた - Qiita](http://qiita.com/moroku0519/items/e6352d31311418f38227)
+- [ハセテツラボ » PythonでTwitterでのツイートをネガポジ判定してみた結果。。。](http://tt-house.com/2013/08/twitter-nega-posi.html)
+- [Atrae Tech Blog — 僕が感情豊かであることをネガ・ポジ判定で証明する](http://atraetech.tumblr.com/post/129177167869/%E5%83%95%E3%81%8C%E6%84%9F%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E3%83%8D%E3%82%AC%E3%83%9D%E3%82%B8%E5%88%A4%E5%AE%9A%E3%81%A7%E8%A8%BC%E6%98%8E%E3%81%99%E3%82%8B)
 
 ## Changelog
 
