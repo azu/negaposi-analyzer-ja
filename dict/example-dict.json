@@ -1,0 +1,20 @@
+[
+  {
+    "surface": "良い",
+    "reading": "ヨイ",
+    "pos": "形容詞",
+    "rank": 1.0
+  },
+  {
+    "surface": "普通",
+    "reading": "フツウ",
+    "pos": "名詞",
+    "rank": 0.5
+  },
+  {
+    "surface": "悪い",
+    "reading": "ワルイ",
+    "pos": "形容詞",
+    "rank": -1
+  }
+]

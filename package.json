@@ -1,0 +1,58 @@
+{
+  "directories": {
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "bin": {
+    "bin/download-negaposi-dict.js": "download-negaposi-dict"
+  },
+  "name": "negaposi-analyzer-ja",
+  "version": "1.0.0",
+  "description": "形態素解析したtokenからネガティブ/ポジティブを判定したスコアを返すJavaScriptライブラリ",
+  "main": "lib/negaposi-analyzer-ja.js",
+  "scripts": {
+    "test": "mocha test/",
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run --if-present build",
+    "postinstall": "download-negaposi-dict"
+  },
+  "keywords": [
+    "japanese",
+    "anylyzer",
+    "positive",
+    "negative",
+    "emotion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/negaposi-analyzer-ja.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/negaposi-analyzer-ja/issues"
+  },
+  "homepage": "https://github.com/azu/negaposi-analyzer-ja",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-jsdoc-to-assert": "^4.0.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.18.0",
+    "kuromojin": "^1.3.2",
+    "mocha": "^3.2.0",
+    "power-assert": "^1.4.2"
+  },
+  "dependencies": {
+    "csv-parse": "^1.1.7",
+    "debug": "^2.6.0",
+    "moji": "^0.5.1",
+    "node-fetch": "^1.6.3",
+    "text-encoding": "^0.6.4"
+  }
+}
